@@ -54,33 +54,32 @@
         </div>
       </i>
     </div>
-    <div class="container-fluid mt-4">
-      <h2 class="display-5 text-center">Shopping Items</h2>
-      <div class="d-flex flex-wrap">
-        <div class="card m-3" style="width: 16rem">
-          <img
-            src="https://th.bing.com/th/id/OIP.JqfCag3pGgrs8qWwgSsk4gHaHS?pid=ImgDet&rs=1"
-            class="card-img-top"
-            alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Mango</h5>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Price : <span>$12.00</span></li>
-          </ul>
-          <div class="card-body">
-            <div class="d-grid">
-              <button class="btn btn-primary" type="button">Add To Cart</button>
-            </div>
+    <!-- Shopping Template -->
+    <template id="shopping-template-id">
+      <div data-id class="card m-3" style="width: 16rem">
+        <img data-image class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 data-title class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Price : $<span data-price></span></li>
+        </ul>
+        <div class="card-body">
+          <div class="d-grid">
+            <button class="btn btn-primary" type="button">Add To Cart</button>
           </div>
         </div>
       </div>
+    </template>
+    <div class="container-fluid mt-4">
+      <h2 class="display-5 text-center">Shopping Items</h2>
+      <div data-shopping-container class="d-flex flex-wrap"></div>
     </div>
     <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
-    <script type="module" src="./js/store.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
