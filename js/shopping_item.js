@@ -1,7 +1,14 @@
 import data from './store.js';
+import { addToCart } from './cart_item.js';
 const shoppingTemplateID = document.querySelector('#shopping-template-id');
 const shoppingContainer = document.querySelector('[data-shopping-container]');
 export default function setupShopping() {
+  document.addEventListener('click', (element) => {
+    if (element.target.matches('[data-add-to-cart]')) {
+      const itemID = element.target.closest('[data-id]');
+      addToCart(+itemID.dataset.id);
+    }
+  });
   data.forEach(renderShopping);
 }
 function renderShopping(item) {

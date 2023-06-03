@@ -24,36 +24,27 @@
         <a href="">Store</a>
         <a href="">Assingment-Conditions</a>
       </div>
-      <i data-cart-icon class="fas fa-cart-plus fa-lg cart-icon">
-        <div class="cart-item-count">2</div>
-        <div class="cart-items-container shadow d-flex flex-column">
-          <div class="card m-3 cart-items" style="width: 12rem">
-            <img
-              src="https://th.bing.com/th/id/OIP.JqfCag3pGgrs8qWwgSsk4gHaHS?pid=ImgDet&rs=1"
-              class="card-img-top"
-              alt="" />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mango : x1 <span>$12.00</span></li>
-            </ul>
-            <span class="cart-item-remove">X</span>
-          </div>
-          <div class="card m-3 cart-items" style="width: 12rem">
-            <img
-              src="https://th.bing.com/th/id/OIP.JqfCag3pGgrs8qWwgSsk4gHaHS?pid=ImgDet&rs=1"
-              class="card-img-top"
-              alt="" />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Mango : x1 <span>$12.00</span></li>
-            </ul>
-            <span class="cart-item-remove">X</span>
-          </div>
-          <div class="d-flex justify-content-between mt-auto p-3 border-top">
-            <h3 class="lead">Total</h3>
-            <h3 class="lead">$64</h3>
-          </div>
+      <div>
+        <i data-cart-icon class="fas fa-cart-plus fa-lg cart-icon">
+          <div class="cart-item-count">0</div>
+        </i>
+        <div>
+          <div
+            class="cart-items-container d-none shadow d-flex flex-column"></div>
         </div>
-      </i>
+      </div>
     </div>
+    <!-- Cart Template -->
+    <template id="cart-template-id">
+      <div data-id class="card m-3 cart-items" style="width: 12rem">
+        <img data-image class="card-img-top" alt="" />
+        <ul class="list-group list-group-flush">
+          <li data-title class="list-group-item"></li>
+          <li data-price class="list-group-item"></li>
+        </ul>
+        <span class="cart-item-remove">X</span>
+      </div>
+    </template>
     <!-- Shopping Template -->
     <template id="shopping-template-id">
       <div data-id class="card m-3" style="width: 16rem">
@@ -66,7 +57,9 @@
         </ul>
         <div class="card-body">
           <div class="d-grid">
-            <button class="btn btn-primary" type="button">Add To Cart</button>
+            <button data-add-to-cart class="btn btn-primary" type="button">
+              Add To Cart
+            </button>
           </div>
         </div>
       </div>
