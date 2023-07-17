@@ -17,11 +17,5 @@ const data = [
     imgUrl: `https://th.bing.com/th/id/R.c72d7edfe419495937dc5c02bbcd85e7?rik=hRc18WgImzh3iw&riu=http%3a%2f%2fmassageinflorida.com%2fblog%2fwp-content%2fuploads%2f2012%2f04%2fAvocado-5918425_l1.jpg&ehk=kQRbjSajWN54cFW8D1%2fm6wLdOE3Fz8mu5K7aGxN12Q0%3d&risl=&pid=ImgRaw&r=0`,
     price: 22092,
   },
-  {
-    id: 4,
-    name: 'Watermelon',
-    imgUrl: `https://th.bing.com/th/id/R.59e9ff70ef500885a76c8ef2036bbe30?rik=Z5FMUZF0JNRM2Q&riu=http%3a%2f%2fwww.h3daily.com%2fwp-content%2fuploads%2f2013%2f07%2fwatermelon.jpg&ehk=ZqOUlnLBkq2Kw66DoWxroJoXKJzKEQsdnsQ2oSCDXj4%3d&risl=&pid=ImgRaw&r=0`,
-    price: 14369,
-  },
 ];
 export default data;
